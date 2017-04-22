@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:key="checkbox_pref"
+
+    android:title="Check Box Preferences">
+
+    <CheckBoxPreference
+
+        android:key="pref_audio"
+
+        android:title="Ear"
+
+        android:summary="Turn text to speech on/off"
+
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+
+        android:key="pref_double_click"
+
+        android:dependency="pref_audio"
+
+        android:title="Eye"
+
+        android:summary="Turn double click on/off"
+
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+
+        android:key="pref_flush"
+
+        android:title="Immediate Text-To-Speech"
+
+        android:summary="Turn flushing of Text-To-Speech on/off"
+
+        android:defaultValue="false" />
+
+
+</PreferenceScreen>
